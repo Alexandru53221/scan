@@ -1,0 +1,41 @@
+.btn {
+    background-color: #5970FF;
+    border-style: none;
+    padding: 1rem 3.5rem;
+    border-radius: .5rem;
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.btn-rate {
+    @extend .btn;
+    margin: 1rem;
+}
+
+.btn-rate-selected {
+    @extend .btn;
+    margin: 1rem;
+    color: black;
+    background-color: #D2D2D2;
+}
+
+.self-align-btn {
+    align-self: flex-end;
+    transform: scale(1.5);
+}
+
+
+.load-more {
+    margin: 3rem auto;
+    transform: scale(1.5);
+}
+
+.burger-log-in {
+    background-color: #7CE3E1;
+    color: #000;
+}
+
+.disabled {
+    background-color: #9eabff;
+}

@@ -1,0 +1,33 @@
+.main__why-us-section {
+    .main__why-us-section__header {
+        font-size: 2.8rem;
+        font-family: 'montserrat';
+    }
+
+    .main__why-us-section__why-us-picture {
+        margin-top: 10rem;
+        max-width: 1440px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main__why-us-section {
+        padding: 1rem;
+
+        .slider1 {
+            padding: 0;
+        }
+
+        .main__why-us-section__header {
+            font-size: 1.5rem;
+        }
+
+        .main__why-us-section__why-us-picture {
+            margin-top: 0;
+        }
+    }
+}

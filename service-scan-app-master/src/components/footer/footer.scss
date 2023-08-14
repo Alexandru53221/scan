@@ -1,0 +1,38 @@
+footer {
+    background-color: #029491;
+    width: 100%;
+    margin-top: auto;
+
+    .footer-container {
+        padding: 0 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1440px;
+        margin: 0 auto;
+
+        .footer__info {
+            text-align: right;
+            color: #fff;
+
+            .footer__info__list {
+                list-style: none;
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    footer {
+    
+        .footer-container {
+            padding: 1rem;
+            align-items: flex-start;
+
+            .footer__logo {
+                padding-top: 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,122 @@
+.main__our-rates-section__cards-container {
+    display: flex;
+    margin: 2rem auto;
+    gap: 2rem;
+    justify-content: center ;
+
+
+    .main__our-rates-section__cards-container__card {
+        display: flex;
+        max-width: 26rem;
+        flex-direction: column;
+        flex: 1;
+        background-color: #fff;
+        min-height: 450px;
+        filter: drop-shadow(2px 2px 4px rgb(202, 202, 202));
+        border-radius: 1rem;
+
+        .main__our-rates-section__cards-container__card__header-beginner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #FFB64F;
+            border-radius: 1rem 1rem 0 0;
+            padding: 1rem;
+            margin: 0;
+
+            h3 {
+              font-size: 1.9rem; 
+              margin: 0; 
+            }
+        }
+
+        .main__our-rates-section__cards-container__card__header-pro {
+            @extend .main__our-rates-section__cards-container__card__header-beginner;
+            background-color: #7CE3E1;
+        }
+
+        .main__our-rates-section__cards-container__card__header-business {
+            @extend .main__our-rates-section__cards-container__card__header-beginner;
+            background-color: #000;
+            color: #fff;
+        }
+        
+        .main__our-rates-section__cards-container__card__price {
+            margin-top: 1rem;
+            padding: 1rem;
+            position: relative;
+
+            .current-rate {
+                display: inline;
+                position: absolute;
+                top: -1.3rem;
+                right: .5rem;
+                padding: .4rem;
+                margin-left: 0;
+                text-align: end;
+                background-color: #3BA5E0;
+                color: #fff;
+                border-radius: 1rem;
+            }
+
+            .main__our-rates-section__cards-container__card__price__actual {
+                font-size: 1.9rem;
+                margin-right: 1rem;
+            }
+
+            .main__our-rates-section__cards-container__card__price__prev {
+                font-size: 1.4rem;
+                text-decoration: line-through;
+                color: grey;
+            }
+        }
+
+        .main__our-rates-section__cards-container__card__rate-info {
+            padding: 1rem;
+
+            .custom-list {
+                list-style-type: none;
+                padding: 0;
+
+                li {
+                    padding-left: 25px; 
+                    background-image: url(../../../../../assets/check.svg);
+                    background-repeat: no-repeat; 
+                    background-position: left center; 
+                }
+            }
+        }
+
+    }
+
+    .main__our-rates-section__cards-container__card--selected {
+        @extend .main__our-rates-section__cards-container__card;
+        border: solid 2px #FFB64F;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .main__our-rates-section__cards-container  {
+        max-width: 22rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .main__our-rates-section__cards-container  {
+        max-width: 22rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .main__our-rates-section__cards-container__card{
+            .btn-rate {
+                padding: 1rem 1.5rem;
+            }
+        }
+    }
+}
